@@ -1,12 +1,23 @@
-# React + Vite
+# 🎉 EventHub – Events Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**EventHub** is a full-featured event management platform built with **React** and **Firebase**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+*To be Added...*
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+| Tech       | Purpose                          |
+|------------|----------------------------------|
+| React      | Frontend UI                      |
+| Firebase   | Backend (Auth, Firestore)        |
+| Tailwind CSS | Styling                        |
+| React Router | Routing & Navigation           |
+| Context API | Global state management         |
+| Day.js     | Date formatting                  |
+
+---
+
