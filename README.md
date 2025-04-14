@@ -1,4 +1,4 @@
-# 🎉 Eventure – Events Management System
+# 🎉 EventHub – Events Management System
 
 **EventHub** is a full-featured event management platform built with **React** and **Firebase**.
 
