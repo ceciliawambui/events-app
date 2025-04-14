@@ -21,18 +21,28 @@ const Navbar = () => {
 
         <div className="flex items-center gap-6">
           <ul className="hidden md:flex items-center gap-6 text-gray-700 font-medium">
+          <li>
+              <Link to="/" className="hover:text-indigo-500">Home</Link>
+            </li>
             <li>
               <Link to="/events" className="hover:text-indigo-500">Events</Link>
+            </li>
+            <li>
+              <Link to="/tickets" className="hover:text-indigo-500">Get Tickets</Link>
             </li>
             <li>
               <Link to="/about" className="hover:text-indigo-500">About</Link>
             </li>
             <li>
+              <Link to="/gallery" className="hover:text-indigo-500">Gallery</Link>
+            </li>
+            <li>
+              <Link to="/blogs" className="hover:text-indigo-500">Blogs</Link>
+            </li>
+            <li>
               <Link to="/contact" className="hover:text-indigo-500">Contact</Link>
             </li>
           </ul>
-
-          {/* Profile Icon */}
           <div className="relative hidden md:block">
             <button onClick={toggleDropdown} className="text-3xl text-indigo-600">
               <FaUserCircle />
