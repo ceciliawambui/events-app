@@ -1,11 +1,11 @@
 import React from 'react';
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa'; // Importing Font Awesome icons from React Icons
+// import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa'; // Importing Font Awesome icons from React Icons
 
 const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white py-8">
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      {/* <div className="max-w-7xl mx-auto px-4"> */}
+        {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
             <p className="mb-2">Email: eventhub@gmail.com</p>
@@ -41,8 +41,6 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-
-          {/* Newsletter Signup */}
           <div>
             <h3 className="text-xl font-semibold mb-4">Newsletter</h3>
             <p className="mb-4">Subscribe to our newsletter for updates and offers.</p>
@@ -60,12 +58,12 @@ const Footer = () => {
               </button>
             </form>
           </div>
-        </div>
+        </div> */}
 
         <div className="border-t border-gray-700 mt-8 pt-4 text-center text-sm">
           <p>&copy; 2025 EventHub. All Rights Reserved.</p>
         </div>
-      </div>
+      {/* </div> */}
     </footer>
   );
 };
