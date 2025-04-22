@@ -11,6 +11,7 @@ import AdminDashboard from "./pages/Dashboards/AdminDashboard"
 import OrganizerDashboard from "./pages/Dashboards/OrganizerDahboard"
 import AttendeeDashboard from "./pages/Dashboards/AttendeeDashboard"
 import ProtectedRoute from "./components/ProtectedRoute"
+import AccountSettings from "./pages/AccountSettings"
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<LandingPage />} />
+        <Route path="/account" element={<ProtectedRoute><AccountSettings/></ProtectedRoute>}/>
         <Route path="/event-details/:id" element={<EventDetails />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
