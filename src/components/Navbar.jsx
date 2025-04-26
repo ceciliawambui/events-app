@@ -7,7 +7,7 @@ import { auth } from "../firebase";
 
 const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
-  const { currentUser, userData} = useAuth();
+  const { currentUser, userData } = useAuth();
 
   const toggleDropdown = () => {
     setDropdownOpen((prev) => !prev);
@@ -24,7 +24,7 @@ const Navbar = () => {
   };
 
   const userName = currentUser?.displayName || currentUser?.email;
-
+  const isOrganizer = userData?.role === "organizer"; // 👈 Check if user is organizer
 
   return (
     <nav className="bg-white shadow-md">
@@ -44,9 +44,11 @@ const Navbar = () => {
             <li>
               <Link to="/events" className="hover:text-indigo-500">Events</Link>
             </li>
-            <li>
-              <Link to="/tickets" className="hover:text-indigo-500">Get Tickets</Link>
-            </li>
+            {isOrganizer && ( // 👈 Only show Create Event for organizers
+              <li>
+                <Link to="/create-event" className="hover:text-indigo-500">Create Events</Link>
+              </li>
+            )}
             <li>
               <Link to="/about" className="hover:text-indigo-500">About</Link>
             </li>
@@ -61,7 +63,7 @@ const Navbar = () => {
             </li>
           </ul>
 
-
+          {/* Profile Dropdown */}
           <div className="relative hidden md:block">
             <button onClick={toggleDropdown} className="w-10 h-10 rounded-full overflow-hidden border-2 border-indigo-600">
               {userData?.profilePhoto ? (
